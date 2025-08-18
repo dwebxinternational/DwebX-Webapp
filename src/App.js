@@ -17,13 +17,6 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Helmet>
-          <script
-            async
-            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1107037419684073"
-            crossorigin="anonymous"
-          ></script>
-        </Helmet>
         <Route exact path="/" element={<SwipeScreen />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />

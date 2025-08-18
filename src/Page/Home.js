@@ -252,6 +252,13 @@ const Home = () => {
 
     return (
         <div className="home-container d-flex flex-column text-white">
+            <Helmet>
+                <script
+                    async
+                    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1107037419684073"
+                    crossorigin="anonymous"
+                ></script>
+            </Helmet>
             <Sidebar sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} coins={coins} coinChangeAnim={coinChangeAnim} />
 
             <div className="home-content flex-grow-1 mt-5 mb-1">

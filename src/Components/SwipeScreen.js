@@ -2,6 +2,7 @@ import React, { useRef, useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../css/SwipeScreen.css';
 import Logo from '../image/logo-2.2.png'
+import { Helmet } from 'react-helmet';
 
 const SwipeScreen = () => {
   const containerRef = useRef(null);
@@ -51,6 +52,13 @@ const SwipeScreen = () => {
 
   return (
     <div className="mobile-view">
+      <Helmet>
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1107037419684073"
+          crossorigin="anonymous"
+        ></script>
+      </Helmet>
       <div className="content-wrapper">
         <div className="top-section">
           <div className="logo">
