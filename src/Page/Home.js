@@ -10,6 +10,7 @@ import { toast, ToastContainer } from 'react-toastify';
 import Logo from '../image/logo-only-d-1.png';
 import 'react-toastify/dist/ReactToastify.css';
 import '../css/font.css';
+import { Helmet } from 'react-helmet';
 
 const Home = () => {
     const [sidebarOpen, setSidebarOpen] = useState(false);
