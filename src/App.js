@@ -10,14 +10,21 @@ import Login from './Page/Login';
 import RabbitRelease from './Page/Rabbitrelease';
 import SwipeScreen from './Components/SwipeScreen';
 import ForgotPassword from './Components/ForgotPassword';
+import { Helmet } from 'react-helmet';
 
 
 function App() {
   return (
     <Router>
       <Routes>
-
-        <Route exact path="/"  element={<SwipeScreen />} />
+        <Helmet>
+          <script
+            async
+            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1107037419684073"
+            crossorigin="anonymous"
+          ></script>
+        </Helmet>
+        <Route exact path="/" element={<SwipeScreen />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
         <Route path="/home" element={<Home />} />
@@ -26,7 +33,7 @@ function App() {
         <Route path="/profile" element={<Profile />} />
         <Route path="/rabbit-release" element={<RabbitRelease />} />
         <Route path="/forgot-password" element={<ForgotPassword />} />
-        
+
       </Routes>
     </Router>
   );
